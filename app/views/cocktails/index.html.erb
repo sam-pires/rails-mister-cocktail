@@ -2,14 +2,10 @@
 <br>
 <%= link_to 'Ajouter un cocktail', new_cocktail_path %>
 <br>
-<%= cl_image_tag("y2a1jipviby60ly8hlux",
-width: 400, height: 300, crop: :fill) %>
-<%= cl_image_tag("ebvkh3cx7pa95duhslni",
-width: 150, height: 150, crop: :thumb, gravity: :face) %>
 <br>
 <% @cocktails.each do |cocktail| %>
 <h4><%= link_to cocktail.name, cocktail_path(cocktail) %></h4>
-  <% if cocktail.photo.valid? %>
+<!--   <% if cocktail.photo == true %>
     <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
-  <% end %>
+  <% end %> -->
 <% end %>
