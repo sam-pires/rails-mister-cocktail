@@ -1,0 +1,62 @@
+.cocktail-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 225px;
+  height: 305px;
+  margin: 20px auto;
+  border-radius: 5px;
+
+  background: rgb(250,250,250);
+  box-shadow: 3px 3px 10px rgba(200,200,200,1);
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 5px 5px 20px rgba(200,200,200,1);
+  }
+}
+
+.cocktail-card-image {
+  border: 1px solid rgba(200,200,200,1);
+  border-radius:5px;
+  height: 200px;
+}
+
+.cocktail-card-content {
+  text-align: center;
+  font-weight: bold;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.content-ingredient {
+  width: 180px;
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+.lemons {
+  display: flex;
+  color: #84e8c2;
+}
+.skulls {
+  color: #516F7A;
+}
+
+.big_link {
+  text-decoration: none !important;
+  color: #5C5C5C;
+  &:hover {
+  text-decoration: none !important;
+  color: #5C5C5C;
+  }
+  &:focus {
+  text-decoration: none !important;
+  color: #5C5C5C;
+  }
+}
+

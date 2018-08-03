@@ -1,0 +1,30 @@
+<div class="cocktail-card">
+
+  <%= link_to cocktail_path(cocktail), class: 'big_link'  do%>
+
+    <div class="cocktail-card-image">
+      <%= cl_image_tag cocktail.photo, height: 200, width: 200, crop: :fill %>
+    </div>
+
+    <div class="cocktail-card-content">
+      <p><%= cocktail.name %></p>
+
+      <div class="content-ingredient">
+        <div class="lemons">
+          <i class="fas fa-lemon"></i>
+          <p><%= cocktail.doses.size %></p>
+        </div>
+        <div class="skulls"><% if cocktail.doses.size >= 3 %>
+            <i class="fas fa-skull"></i>
+            <i class="fas fa-skull"></i>
+            <i class="fas fa-skull"></i>
+          <% else %>
+            <i class="fas fa-skull"></i>
+          <% end %></div>
+      </div>
+
+    </div>
+
+    <% end %>
+
+</div>

@@ -1,11 +1,32 @@
-<h1>Nos cocktails</h1>
-<br>
-<%= link_to 'Ajouter un cocktail', new_cocktail_path %>
-<br>
-<br>
-<% @cocktails.each do |cocktail| %>
-<h4><%= link_to cocktail.name, cocktail_path(cocktail) %></h4>
-<!--   <% if cocktail.photo == true %>
-    <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
-  <% end %> -->
-<% end %>
+<div class="wrapper">
+
+
+  <div class="container">
+    <div class="row">
+      <h1 id='cocktail_title' class="col-xs-12">Nos cocktails</h1>
+      <div class="legend col-xs-12">
+        <p><i class="fas fa-lemon"></i> = number of ingredients</p>
+        <p><i class="fas fa-skull"></i> = risk of headache in the morning</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+
+      <div class="col-xs-12 col-md-3">
+        <%= render "cocktail_card", cocktail: cocktail %>
+      </div>
+
+      <% end %>
+    </div>
+  </div>
+
+  <%= link_to new_cocktail_path do %>
+    <div id="button-add-cocktail">
+      <i class="fas fa-plus"></i>
+    </div>
+  <% end %>
+</div>
+

@@ -7,7 +7,11 @@
   padding: 0px 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
+}
+
+.navbar-wagon-left {
+  padding-left: 15px;
 }
 
 /* Logo */
@@ -75,3 +79,4 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+

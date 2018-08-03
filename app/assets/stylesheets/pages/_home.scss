@@ -1,1 +1,49 @@
 // Specific CSS for your home-page
+#cocktail_title {
+  margin: 30px;
+  font-size: 54px;
+}
+
+.wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+
+}
+
+.legend {
+  font-size: 12px;
+  margin: 10px 10px 20px 40px;
+}
+
+#button-add-cocktail {
+  width: 90px;
+  height: 90px;
+  margin: 0px;
+  border-radius: 50%;
+  background: #71f2c1;
+  color: white !important;
+  font-size: 30px;
+  box-shadow: 3px 3px 10px rgba(200,200,200,0.5);
+  transition: box-shadow 0.2s ease;
+  text-decoration: none !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50px;
+  right: 30px;
+
+  &:hover {
+  box-shadow: 5px 5px 15px rgba(150,150,150,0.5);
+  text-decoration: none !important;
+  }
+  &:focus {
+  text-decoration: none !important;
+  }
+}
+
